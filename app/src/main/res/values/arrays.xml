@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/tools">
+    <string-array name="level">
+        <item>난이도&#160;▼</item>
+        <item>상</item>
+        <item>중</item>
+        <item>하</item>
+    </string-array>
+
+    <string-array name="hardware">
+        <item>종류&#160;▼</item>
+        <item>아두이노</item>
+        <item>라즈베리파이</item>
+        <item>갈릴레오</item>
+        <item>비글본블랙</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="subject">
+        <item>주제&#160;▼</item>
+        <item>3D프린터</item>
+        <item>홈오토매틱</item>
+        <item>조명</item>
+        <item>로봇</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="event_type">
+        <item>종류&#160;▼</item>
+        <item>교육</item>
+        <item>컨설팅</item>
+        <item>공모전</item>
+        <item>창업</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="event_location">
+        <item>지역&#160;▼</item>
+        <item>서울</item>
+        <item>경기</item>
+        <item>인천</item>
+    </string-array>
+
+    <!--<string-array name="search">
+        <item>Analog-XY-Plotter-Output-to-HPGL-Translator</item>
+        <item>GPS Speedometer</item>
+        <item>SonicDisc: A 360 Ultrasonic Scanner</item>
+    </string-array>-->
+</resources>
+
+
+    <!--종류: 아두이노, 라즈베리 파이, 갈릴레오, 비글본 블랙 4가지 옵션외 나머지 하드웨어는 ‘기타’ 로 통합 검색
+    주제: 3D 프린터, 홈 오토매틱, 조명, 로봇 5가지 옵션 외 나머지는 ‘기타’로 통합 검색.
+    -->

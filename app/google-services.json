@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "529571816707",
+    "firebase_url": "https://makery-9caef.firebaseio.com",
+    "project_id": "makery-9caef",
+    "storage_bucket": "makery-9caef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529571816707:android:1091d534a88ad205",
+        "android_client_info": {
+          "package_name": "makery.makerspace.t.makery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529571816707-avv523c5h7o8ee9po5h84r82pa5volij.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "makery.makerspace.t.makery",
+            "certificate_hash": "3a76f0d224a82649d16d79dcd0e63e9f5ff2e329"
+          }
+        },
+        {
+          "client_id": "529571816707-h6v7mlc3gjcu36v9q20hau2d0bt5du7v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzqv8R-hePwFQzOuIPJ2x68EjoQO5tcwI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529571816707-h6v7mlc3gjcu36v9q20hau2d0bt5du7v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

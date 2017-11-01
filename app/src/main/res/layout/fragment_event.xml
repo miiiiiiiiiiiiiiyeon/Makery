@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="makery.makerspace.t.makery.fragment.EventFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/basicColor">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_up_white_24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/basicColor"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/round_white"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/event_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:completionThreshold="1"
+                android:hint="어떤 이벤트를 찾으세요?"
+                android:maxLines="1"
+                android:paddingLeft="10dp" />
+
+            <LinearLayout
+                android:id="@+id/search_btn"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_search_black_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="18dp"
+            android:hint="상세검색"
+            android:textColorHint="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3.5">
+
+            <Spinner
+                android:id="@+id/spinner_etype"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_white"
+                android:entries="@array/event_type" />
+
+            <Spinner
+                android:id="@+id/spinner_region"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_white"
+                android:entries="@array/event_location" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.2"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="right">
+
+            <TextView
+                android:id="@+id/event_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/event_pop"
+                android:gravity="center"
+                android:text="마감순"
+                android:textColor="@color/color_selector" />
+
+            <TextView
+                android:id="@+id/event_pop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="인기순"
+                android:textColor="@color/color_selector" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="이벤트"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:id="@+id/eventGridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="2"
+                android:verticalSpacing="5dp" />
+
+            <TextView
+                android:id="@+id/no_event"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="해당하는 이벤트가 없습니다."
+                android:textColor="#212121"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
+    <!--numColumns : GridView의 행에 나열할 컬럼의 개수(1~n개)를 지정한다.
+    'auto_fit'으로 설정하면 사용 가능한 공간에 따라 자동으로 컬럼의 개수가 정해진다.
+    verticalSpacing과 horizontdalSpacing : GridView의 셀 간격을 설정한다.
+    columnWidth : 컬럼의 너비를 설정한다.
+    stretchMode : numColumns를 'auto-fit'로 설정했을 경우 남는 좌우 공간을 어떻게 분배할지 결정한다.
+     'columnWidth'는
+    남은 공간이 칼럼들에게 골고루 할당되며, 'spacingWidth'는 컬럼들에게 여백으로 남은 공간을 골고루 할당한다.-->

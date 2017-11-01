@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical"
+    android:paddingBottom="30dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="makery.makerspace.t.makery.ui.JoinActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="취소"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="가입하기"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="70dp"
+        android:text="사용하실 이메일을 입력 해주세요."
+        android:textColor="#ffffff"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름(닉네임)"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/nick_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/nickname"
+                android:paddingLeft="15dp"
+                android:text="닉네임을 입력해주세요!"
+                android:textColor="#ff0000" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/member_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름(닉네임)을 입력하세요."
+            android:inputType="text"
+            android:maxLength="8"
+            android:maxLines="1"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <TextView
+            android:id="@+id/nicknameCheck"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="닉네임 중복 확인"
+            android:textColor="#ff9500" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="이메일"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/email_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/email"
+                android:paddingLeft="15dp"
+                android:text="이메일을 입력해주세요!"
+                android:textColor="#ff0000" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/member_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이메일을 입력하세요."
+            android:inputType="textEmailAddress"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <TextView
+            android:id="@+id/emailCheck"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="이메일 중복 확인"
+            android:textColor="#ff9500" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/pw_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/password"
+                android:paddingLeft="15dp"
+                android:text="비밀번호를 입력해주세요!"
+                android:textColor="#ff0000" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/member_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호 입력하세요."
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/joinComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="완료"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

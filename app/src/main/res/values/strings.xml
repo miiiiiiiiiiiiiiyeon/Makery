@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Makery</string>
+    <string name="title_activity_bottom">BottomActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="map">map</string>
+    <string name="mypage">mypage</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="메뉴얼">메뉴얼</string>
+    <string name="프로젝트">프로젝트</string>
+    <string name="이벤트">이벤트</string>
+    <string name="내정보">내정보</string>
+    <string name="매뉴얼">매뉴얼</string>
+</resources>
